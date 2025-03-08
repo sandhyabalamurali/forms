@@ -1,0 +1,149 @@
+/* FormStyles.css */
+
+.formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  h3 {
+    color: #444;
+    margin: 20px 0 10px;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  .inputError {
+    border-color: #e74c3c;
+    background-color: #fff6f6;
+  }
+  
+  .errorMessage {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .submitButton {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #3a80d2;
+  }
+  
+  .toggleContainer {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .toggleButton {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .toggleButton:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .toggleButton:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .toggleButton.active {
+    background-color: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+  }
+  
+  .charCounter {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 4px;
+  }
+  
+  .charValid {
+    color: #27ae60;
+  }
+  
+  .charInvalid {
+    color: #e74c3c;
+  }
+  
+  .previewContainer {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .imagePreview {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .formContainer {
+      padding: 15px;
+      margin: 10px;
+    }
+    
+    input, 
+    textarea, 
+    .submitButton {
+      font-size: 16px; /* Better for mobile touch */
+    }
+  }
