@@ -46,6 +46,7 @@ export const isRequired = (value) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
+  console.log(isValidEmail("invalid-email")); 
   
   /**
    * Validates file type
